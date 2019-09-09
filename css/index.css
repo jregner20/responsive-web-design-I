@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5 {
 header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 2% 0 0 1%;
 }
 
@@ -284,14 +285,22 @@ nav {
 
 @media (max-width: 800px){
   header nav {
-      justify-content: row-reverse;
+      flex-direction: row;
+      flex-wrap: wrap;
   }
 
-  header nav .logo {
-      justify-content: flex-start;
+  .stack1 {
+      display: flex;
+      flex-direction: column-reverse;
   }
 
-  section img {
+  .stack1 .logo{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 5%;
+  }
+
+  .image1 {
       display: none;
   }
 
