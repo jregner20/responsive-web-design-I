@@ -145,9 +145,17 @@ header .logo {
   padding-top: 39px;
 }
 
+.text-content {
+  padding: 3% 0 3% 0;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-content .top-content {
   display: flex;
-  padding: 0 10px;
 }
 
 .main-content .top-content .text-content {
@@ -164,11 +172,10 @@ header .logo {
   margin-top: 45px;
 }
 
-.main-content .bottom-content {
+/* .main-content .bottom-content {
   display: flex;
   margin-top: 37px;
-  padding: 0 10px;
-}
+} */
 
 .main-content .bottom-content .text-content {
   width: 275px;
@@ -298,6 +305,7 @@ nav {
       display: flex;
       justify-content: center;
       padding-bottom: 5%;
+      width: 50%;
   }
 
   .image1 {
@@ -307,4 +315,44 @@ nav {
   section .cta {
       justify-content: center;
   }
+}
+
+@media (max-width: 500px){
+  .stack1 .logo {
+      display: flex;
+      justify-content: center;
+  }
+
+  header nav {
+      flex-direction: column;
+      padding-top: 2%;
+      margin: 0 50% 0 50%;
+  }
+
+  header nav a {
+      border-bottom: solid black;
+      border-width: 100%;
+      font-size: 20px;
+      margin: 15% 0 15% 0;
+      padding: 0 0 15% 0;
+  }
+  
+  .top-content {
+     display: flex;
+     flex-direction: column;
+  }
+
+  .text-content {
+     padding: 3% 0 3% 0;
+  }
+
+  .bottom-content {
+     display: flex;
+     flex-direction: column;
+  }
+
+  .top-content h3 {
+      justify-content: center;
+  }
+
 }
