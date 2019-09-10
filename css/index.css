@@ -291,9 +291,15 @@ nav {
 }
 
 @media (max-width: 800px){
-  header nav {
+  
+    header nav {
       flex-direction: row;
       flex-wrap: wrap;
+  }
+
+  header .stack1{
+      display: flex;
+      justify-content: center;
   }
 
   .stack1 {
@@ -304,8 +310,8 @@ nav {
   .stack1 .logo{
       display: flex;
       justify-content: center;
-      padding-bottom: 5%;
-      width: 50%;
+      margin: 5% 10% 5% 40%;
+      width: 20%;
   }
 
   .image1 {
@@ -321,12 +327,13 @@ nav {
   .stack1 .logo {
       display: flex;
       justify-content: center;
+      margin: 5% 10% 5% 42%;
   }
 
   header nav {
       flex-direction: column;
       padding-top: 2%;
-      margin: 0 50% 0 50%;
+      margin: 0 50% 0 46%;
   }
 
   header nav a {
@@ -336,23 +343,22 @@ nav {
       margin: 15% 0 15% 0;
       padding: 0 0 15% 0;
   }
-  
-  .top-content {
-     display: flex;
-     flex-direction: column;
+
+  .main-content {
+      display: flex;
+      flex-direction: column;
+      margin: 0% 20% 0% 20%;
   }
 
-  .text-content {
-     padding: 3% 0 3% 0;
+  .top-content{
+      margin: 0 50% 0 0;
   }
 
-  .bottom-content {
-     display: flex;
-     flex-direction: column;
+  .top-content, .middle-img, .bottom-content {
+      flex-direction: column;
   }
 
-  .top-content h3 {
-      justify-content: center;
+  .contact {
+      margin: 0 0 0 19%;
   }
-
 }
